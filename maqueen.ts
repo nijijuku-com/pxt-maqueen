@@ -215,6 +215,13 @@ namespace maqueen {
     }
 
     //% weight=20
+    //% blockId=onTrace_Patrol block="Patrol onTrace|%patrol"
+    //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
+    export function onTrace(patrol: Patrol): boolean {
+    	return (readPatrol(patrol) == 0)
+    }
+
+    //% weight=20
     //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
     //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
     //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
